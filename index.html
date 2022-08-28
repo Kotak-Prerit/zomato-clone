@@ -10,7 +10,10 @@
     <title>Zomato</title>
 </head>
 
-<body>
+<body onload="myFunc()">
+
+    <div id="preloader"></div>
+
     <div class="section-one">
         <header>
             <nav>
@@ -196,8 +199,87 @@
             </div>
         </div>
     </div>
+
+    <div class="section-five">
+        <div class="container-five">
+            <div class="sec-img-holder">
+                <img src="img/img11.avif" alt="">
+            </div>
+            <div class="zomato-app-form">
+                <div class="wrapper">
+                    <h1>Get the Zomato App</h1>
+                    <p class="form-text">We will send you a link, open it on your phone to download the app</p>
+                    <div class="radiobtn">
+                        <div class="radio-one">
+                            <input type="radio" name="Email">
+                            <p>Email</p>
+                        </div>
+                        <div class="radio-two">
+                            <input type="radio" name="Phone Number">
+                            <p>Phone</p>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="Email" placeholder="Email">
+                        <a>App Link</a>
+                    </div>
+                    <p class="download-app">Download app from</p>
+                    <div class="app-img">
+                        <a><img src="img/gplay.webp"></a>
+                        <a><img src="img/appstore.webp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-</body>
+    <div class="section-six">
+        <div class="cards">
+            <h1>Explore options near me</h1>
+            <div class="card-bucket">
+                <div class="card-content">
+                    <p>Popular cuisines near me</p>
+                </div>
+                <img src="img/chevron-down.svg" height="15px" width="15px">
+            </div>
+            <div class="card-bucket">
+                <div class="card-content">
+                    <p>Popular restaurant types near me</p>
+                </div>
+                <img src="img/chevron-down.svg" height="15px" width="15px">
+            </div>
+            <div class="card-bucket">
+                <div class="card-content">
+                    <p>Top Restaurant Chains</p>
+                </div>
+                <img src="img/chevron-down.svg" height="15px" width="15px">
+            </div>
+            <div class="card-bucket">
+                <div class="card-content">
+                    <p>Cities We Deliver To</p>
+                </div>
+                <img src="img/chevron-down.svg" height="15px" width="15px">
+            </div>
+        </div>
+    </div>
 
+    <div class="source">
+        <p>Source Code : </p>
+        <a href="#">GitHub</a>
+    </div>
+
+    <footer>
+        <img src="img/footer-img.avif" height="30px">
+        <i>Made with <span>❤</span> by <strong>Prerit</strong></i>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        function myFunc() {
+            preloader.style.display = "none";
+        }
+    </script>
+
+</body>
 </html>

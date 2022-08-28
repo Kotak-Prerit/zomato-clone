@@ -49,9 +49,6 @@ nav{
     font-size: 18px;
     font-weight: 300;
 }
-.download{
-    margin-right: 5px;
-}
 .center-img{
     height: 80px;
     width: 100%;
@@ -159,7 +156,10 @@ nav{
     width:10px;
 }
 ::-webkit-scrollbar-thumb{
-    background: #000;
+    background: url(img/thumb.jpg);
+}
+::-webkit-scrollbar-track{
+    background: url(img/track.jpg);
 }
 .section-three{
     display: flex;
@@ -192,6 +192,7 @@ nav{
 .collection-card{
     height: 320px;
     border-radius: 6px;
+    background: #000;
 }
 .collection-img{
     height: 100%;
@@ -203,6 +204,7 @@ nav{
     border-radius: 6px;
     cursor: pointer;
     position: relative;
+    opacity: 75%;
 }
 .ek{
     background-image: url(img/img6.avif);
@@ -228,7 +230,7 @@ nav{
     background: linear-gradient(#0000000a, #000000b6);
 }
 .section-four{
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -259,6 +261,8 @@ nav{
     border: 1px solid lightgray;
     border-radius: 8px;
     transition: 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
 }
 .card-one:hover{
     box-shadow: 0 4px;
@@ -281,4 +285,226 @@ nav{
     font-size: 20px;
     color: #000;
     font-weight: 300;
+}
+.section-five{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFBF7;
+}
+.container-five{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-img-holder{
+    display: grid;
+    place-items: center;
+}
+.sec-img-holder img{
+    height: 300px;
+    margin-right: 10px;
+}
+.zomato-app-form{
+    height: 90%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.zomato-app-form  h1{
+    font-size: 44px;
+    font-weight: 400;
+    color: #1c1c1c;
+    margin-bottom: 15px;
+}
+.zomato-app-form .form-text{
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    width: 85%;
+}
+.radiobtn{
+    width: 50%;
+    margin-top: 25px;
+}
+.radiobtn,.radio-one,.radio-two{
+    display: flex;
+    justify-content: space-between;
+}
+.radio-one p,.radio-two p{
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.input input{
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+}
+.input a{
+    width: 35%;
+    padding: 10px;
+    font-size: 16px;
+    background: #EF4F5F;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.download-app{
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #9FA29F;
+}
+.app-img{
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.app-img img{
+    height: 40px;
+    margin-right: 15px;
+}
+.wrapper{
+    margin-top: 20px;
+}
+@media (max-width:650px) {
+    
+    .container-five{
+        height: 80%;
+        width: 90%;
+        margin: 0 10px;
+    }
+    .zomato-app-form h1{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .sec-img-holder img{
+        height: 200px;
+        margin-right: 0;
+    }
+    .input{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input a{
+        font-size: 16px;
+        width: 100px;
+        margin: 5px;
+        height: 50px;
+        text-align: center;
+    }
+    .input input{
+        margin-top: 5px;
+    }
+    .form-text{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .download-app{
+        margin-top: 5px;
+    }
+    .links{
+        display: none;
+    }
+    .radiobtn{
+        margin-top: 5px;
+    }
+    .searchbar{
+        width: 90%;
+    }
+    .paragraph p{
+        font-size: 25px;
+        width: 70%;
+    }
+    .collection-card{
+        height: 250px;
+        width: 30%;
+    }
+}
+.section-six{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFBF7;
+}
+.cards h1{
+    font-size: 30px;
+    color: #363636;
+    font-weight: 400;
+    background: #FFFBF7;
+    margin-bottom: 10px;
+}
+.cards{
+    width: 80%;
+    background: #FFFBF7;
+}
+.card-bucket{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+    background: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.card-content p{
+    font-size: 18px;
+    margin-left: 15px;
+}
+.card-bucket img{
+    margin-right: 15px;
+}
+span{
+    color: red;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    padding: 15px;
+}
+.source{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px solid lightgray;
+}
+.source a{
+    padding: 0 10px;
+}
+.source i{
+    font-size: 18px;
+    color: #4d4c4c;
+    font-weight: 300;
+}
+#preloader{
+    background: #E3FFE2 url(img/loader.gif) no-repeat center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
