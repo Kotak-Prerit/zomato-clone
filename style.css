@@ -159,7 +159,7 @@ nav{
     background: url(img/thumb.jpg);
 }
 ::-webkit-scrollbar-track{
-    background: url(img/track.jpg);
+    background: url(img/scrollbg.jpg);
 }
 .section-three{
     display: flex;
